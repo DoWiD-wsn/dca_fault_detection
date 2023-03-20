@@ -17,11 +17,6 @@
 #
 # A dataset has to be given as parameter, for example:
 # => $ python3 simulate_ddca.py datasets/asnx_base_data.csv
-#
-# @file     simulate_ddca.py
-# @author   Dominik Widhalm
-# @version  1.0.0
-# @date     2021/12/01
 #####
 
 

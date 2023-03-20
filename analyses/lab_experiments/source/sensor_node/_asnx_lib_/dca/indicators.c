@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) fault indicator library -- source file
- *
- * Implementation of the fault indicators available on the ASN(x).
- *
- * @file    /_asnx_lib_/dca/indicators.c
- * @author  Dominik Widhalm
- * @version 1.4.1
- * @date    2021/10/25
- */
-
 /***** INCLUDES *******************************************************/
 #include "indicators.h"
 

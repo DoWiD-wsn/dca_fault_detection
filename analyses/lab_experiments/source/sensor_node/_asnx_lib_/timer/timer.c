@@ -1,15 +1,3 @@
-/*!
- * @brief   ASN(x) timer library -- source file
- *
- * Library to support the use of the timer/counter module.
- *
- * @file    /_asnx_lib_/timer/timer.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
-
 /***** INCLUDES *******************************************************/
 #include "timer.h"
 

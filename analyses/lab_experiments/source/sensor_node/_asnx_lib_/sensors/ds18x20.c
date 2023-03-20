@@ -1,17 +1,3 @@
-/*!
- * @brief   ASN(x) DS18X20 temperature sensor library -- source file
- *
- * Library to support the DS18X20 temperature sensor.
- *
- * @file    /_asnx_lib_/sensors/ds18x20.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- *
- * @see     https://create.arduino.cc/projecthub/TheGadgetBoy/ds18b20-digital-temperature-sensor-and-arduino-9cc806
- */
-
-
 /***** INCLUDES ***************************************************************/
 #include "ds18x20.h"
 

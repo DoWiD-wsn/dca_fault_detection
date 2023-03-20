@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) sensor network message library -- source file
- *
- * Library for functionality regarding the messaging of sensor values.
- *
- * @file    /_asnx_lib_/util/sensor_msg.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
 /***** INCLUDES *******************************************************/
 #include "sensor_msg.h"
 

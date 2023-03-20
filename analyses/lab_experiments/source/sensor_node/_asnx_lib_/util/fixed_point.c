@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) fixed-point arithmetic library -- source file
- *
- * Library to support the use of fixed point variables.
- *
- * @file    /_asnx_lib_/util/fixed_point.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
 /***** INCLUDES *******************************************************/
 #include "fixed_point.h"
 

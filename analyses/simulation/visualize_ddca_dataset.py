@@ -17,11 +17,6 @@
 # The ddca dataset has to be given as parameter, for example:
 # => $ python3 visualize_ddca_dataset.py results/base_-_indoor_-_stable-ddca.csv 1
 # where the 2nd parameter defines the transparency of the SVG output
-#
-# @file     visualize_ddca_dataset.py
-# @author   Dominik Widhalm
-# @version  1.0.0
-# @date     2021/12/01
 #####
 
 

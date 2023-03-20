@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) temperature helper library -- header file
- *
- * Library to support working with temperature values and their conversion.
- *
- * @file    /_asnx_lib_/util/temperature.h
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
 #ifndef _ASNX_TEMP_H_
 #define _ASNX_TEMP_H_
 

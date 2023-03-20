@@ -1,15 +1,3 @@
-/*!
- * @brief   ASN(x) PCR85263 RTC library -- source file
- *
- * Library to support the PCR85263 RTC module.
- *
- * @file    /_asnx_lib_/rtc/pcf85263.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
-
 /***** INCLUDES *******************************************************/
 #include "pcf85263.h"
 

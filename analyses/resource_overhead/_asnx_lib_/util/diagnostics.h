@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) self-diagnostics library -- header file
- *
- * Library to support the self-diagnostic measures of the ASN(x).
- *
- * @file    /_asnx_lib_/util/diagnostics.h
- * @author  Dominik Widhalm
- * @version 1.4.2
- * @date    2022/01/25
- */
-
 #ifndef _ASNX_DIAG_H_
 #define _ASNX_DIAG_H_
 

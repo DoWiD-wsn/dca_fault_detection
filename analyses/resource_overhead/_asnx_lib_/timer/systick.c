@@ -1,17 +1,3 @@
-/*!
- * @brief   ASN(x) systick library -- source file
- *
- * Library to enable a systick timer based on the TIMER0 module.
- *
- * @file    /_asnx_lib_/timer/systick.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- *
- * @note    The systick timer is stopped when the MCU enters specific sleep modes!
- */
-
-
 /***** INCLUDES *******************************************************/
 #include "systick.h"
 

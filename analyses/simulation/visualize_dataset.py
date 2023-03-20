@@ -15,11 +15,6 @@
 # The base dataset has to be given as parameter, for example:
 # => $ python3 visualize_dataset.py datasets/asnx_base_data.csv 1
 # where the 2nd parameter defines the transparency of the SVG output
-#
-# @file     visualize_dataset.py
-# @author   Dominik Widhalm
-# @version  1.0.0
-# @date     2021/11/30
 #####
 
 

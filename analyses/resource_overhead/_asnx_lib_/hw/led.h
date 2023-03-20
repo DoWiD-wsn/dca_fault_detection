@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) user LED library -- header file
- *
- * Library to support the use of the ASN(x) user LEDs.
- *
- * @file    /_asnx_lib_/hw/led.h
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
 #ifndef _ASNX_LED_H_
 #define _ASNX_LED_H_
 

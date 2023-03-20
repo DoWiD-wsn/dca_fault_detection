@@ -14,7 +14,7 @@
     (title "AVR-based Sensor Node with Xbee (ASN(x))")
     (date 2022-02-04)
     (rev 1.5)
-    (company "UAS Technikum Wien")
+    (company "Some University")
   )
 
   (layers

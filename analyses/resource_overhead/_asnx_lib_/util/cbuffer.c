@@ -1,15 +1,3 @@
-/*!
- * @brief   ASN(x) circular buffer library -- source file
- *
- * Library to enable circular buffer functionality.
- *
- * @file    /_asnx_lib_/util/cbuffer.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
-
 /***** INCLUDES *******************************************************/
 #include "cbuffer.h"
 

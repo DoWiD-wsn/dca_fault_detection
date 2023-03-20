@@ -1,17 +1,3 @@
-/*!
- * @brief   ASN(x) UART library -- source file
- *
- * Library to support the use of the UART (blocking and non-blocking).
- *
- * @file    /_asnx_lib_/uart/uart.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- *
- * @todo    *) Add timeout to "wait" functions (e.g., blocking)
- */
-
-
 /***** INCLUDES *******************************************************/
 #include "uart.h"
 

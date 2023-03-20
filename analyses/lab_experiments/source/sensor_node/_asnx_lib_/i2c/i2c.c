@@ -1,15 +1,3 @@
-/*!
- * @brief   ASN(x) I2C (TWI) library -- source file
- *
- * Library to support the use of the I2C module.
- *
- * @file    /_asnx_lib_/i2c/i2c.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
-
 /***** INCLUDES *******************************************************/
 #include "i2c.h"
 

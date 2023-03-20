@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) DS18X20 temperature sensor library -- header file
- *
- * Library to support the DS18X20 temperature sensor.
- *
- * @file    /_asnx_lib_/sensors/ds18x20.h
- * @author  Dominik Widhalm
- * @version 1.2.1
- * @date    2021/12/29
- */
-
 #ifndef _ASNX_DS18X20_H_
 #define _ASNX_DS18X20_H_
 

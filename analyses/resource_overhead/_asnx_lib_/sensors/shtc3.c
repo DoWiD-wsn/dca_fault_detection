@@ -1,19 +1,3 @@
-/*!
- * @brief   ASN(x) SHTC3 sensor library -- source file
- *
- * Library to support the SHTC3 sensor (via I2C).
- *
- * @file    /_asnx_lib_/sensors/shtc3.c
- * @author  Dominik Widhalm
- * @version 1.1.0
- * @date    2021/09/28
- * 
- * @see     https://github.com/Sensirion/shtc3-stm-sample-project/
- * @note    Based on the SHTC3 sample code for STM32 by Sensirion
- * @todo    Clock-stretching did not work in combination with sleep
- */
-
-
 /***** INCLUDES *******************************************************/
 #include "shtc3.h"
 

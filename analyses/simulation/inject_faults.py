@@ -12,11 +12,6 @@
 #
 # A dataset has to be given as parameter, for example:
 # => $ python3 inject_faults.py datasets/asnx_base_data.csv
-#
-# @file     inject_faults.py
-# @author   Dominik Widhalm
-# @version  1.0.0
-# @date     2021/12/14
 #####
 
 

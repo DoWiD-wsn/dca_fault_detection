@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) Xbee 3 library -- header file
- *
- * Library to the Xbee 3 module accessible via UART.
- *
- * @file    /_asnx_lib_/xbee/xbee.h
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
 #ifndef _ASNX_XBEE_H_
 #define _ASNX_XBEE_H_
 

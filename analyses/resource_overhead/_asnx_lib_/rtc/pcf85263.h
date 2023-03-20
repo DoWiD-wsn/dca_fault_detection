@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) PCF85263 RTC library -- header file
- *
- * Library to support the PCF85263 RTC module.
- *
- * @file    /_asnx_lib_/rtc/pcf85263.h
- * @author  $Author: Dominik Widhalm $
- * @version $Revision: 1.1.0 $
- * @date    $Date: 2021/05/12 $
- */
-
 #ifndef _ASNX_PCF85263_H_
 #define _ASNX_PCF85263_H_
 

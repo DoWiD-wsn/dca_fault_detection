@@ -81,4 +81,4 @@ The use sensor node source code is located in the `analyses/lab_experiments/sour
 ### Indoor deployment ###
 
 Our indoor deployment consists of seven sensor nodes that included our node-level diagnostics.
-As stated above, the source code is available in the `/home/widhalm/Downloads/dca_fault_detection/source/sensor_node/` directory.
+As stated above, the source code is available in the `dca_fault_detection/source/sensor_node/` directory.

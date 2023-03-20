@@ -25,11 +25,6 @@
 #
 # A dataset has to be given as parameter, for example:
 # => $ python3 assess_ddca_output.py results/base_-_indoor_-_stable-ddca.csv
-#
-# @file     assess_ddca_output.py
-# @author   Dominik Widhalm
-# @version  1.0.0
-# @date     2021/12/01
 #####
 
 

@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) hardware library -- header file
- *
- * Library to support the use of the GPIOs as inputs or outputs.
- *
- * @file    /_asnx_lib_/hw/hw.h
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- *****/
-
 #ifndef _ASNX_HW_H_
 #define _ASNX_HW_H_
 

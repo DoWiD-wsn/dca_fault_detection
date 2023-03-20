@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) LM75 temperature sensor library -- header file
- *
- * Library to support the LM75 temperature sensor.
- *
- * @file    /_asnx_lib_/sensors/lm75.h
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
 #ifndef _ASNX_LM75_H_
 #define _ASNX_LM75_H_
 

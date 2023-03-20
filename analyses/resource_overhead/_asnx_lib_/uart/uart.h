@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) UART library -- header file
- *
- * Library to support the use of the UART (blocking and non-blocking).
- *
- * @file    /_asnx_lib_/uart/uart.h
- * @author  Dominik Widhalm
- * @version 1.2.2
- * @date    2022/01/24
- */
-
 #ifndef _ASNX_UART_H_
 #define _ASNX_UART_H_
 

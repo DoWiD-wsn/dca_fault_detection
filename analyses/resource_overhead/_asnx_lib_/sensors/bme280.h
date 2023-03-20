@@ -1,17 +1,3 @@
-/*!
- * @brief   ASN(x) BME280 environmental sensor library -- header file
- *
- * Library to support the BME280 environmental sensor.
- *
- * @file    /_asnx_lib_/sensors/bme280.h
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- *
- * @see     https://github.com/bitbank2/bme280
- * @see     https://github.com/BoschSensortec/BME280_driver
- */
-
 #ifndef _ASNX_BME280_H_
 #define _ASNX_BME280_H_
 

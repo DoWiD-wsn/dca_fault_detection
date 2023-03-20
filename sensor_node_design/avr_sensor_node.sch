@@ -7,7 +7,7 @@ Sheet 1 1
 Title "AVR-based Sensor Node with Xbee (ASN(x))"
 Date "2022-02-04"
 Rev "1.5"
-Comp "UAS Technikum Wien"
+Comp "Some University"
 Comment1 ""
 Comment2 ""
 Comment3 ""

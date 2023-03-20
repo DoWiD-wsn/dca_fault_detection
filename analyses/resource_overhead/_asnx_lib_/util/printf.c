@@ -1,17 +1,3 @@
-/*!
- * @brief   ASN(x) printf library -- source file
- *
- * Library to enable printf functionality.
- *
- * @file    /_asnx_lib_/util/printf.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- *
- * @see     https://github.com/mpaland/printf
- */
-
-
 /***** INCLUDES *******************************************************/
 #include "printf.h"
 

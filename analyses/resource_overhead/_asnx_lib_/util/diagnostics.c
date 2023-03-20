@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) self-diagnostics library -- source file
- *
- * Library to support the self-diagnostic measures of the ASN(x).
- *
- * @file    /_asnx_lib_/util/diagnostics.c
- * @author  Dominik Widhalm
- * @version 1.4.2
- * @date    2022/01/25
- */
-
 /***** INCLUDES *******************************************************/
 #include "diagnostics.h"
 

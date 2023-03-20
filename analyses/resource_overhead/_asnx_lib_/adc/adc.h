@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) ADC library -- header file
- *
- * Library to support the use of the ADC.
- *
- * @file    /_asnx_lib_/adc/adc.h
- * @author  Dominik Widhalm
- * @version 1.2.4
- * @date    2022/01/25
- */
-
 #ifndef _ASNX_ADC_H_
 #define _ASNX_ADC_H_
 

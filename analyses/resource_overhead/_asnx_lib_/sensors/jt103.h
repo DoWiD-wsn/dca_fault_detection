@@ -1,14 +1,3 @@
-/*!
- * @brief   ASN(x) 103JT thermistor library -- header file
- *
- * Library to support the use of the 103JT thermistor for temperature measurements.
- *
- * @file    /_asnx_lib_/sensors/jt103.h
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- */
-
 #ifndef _ASNX_JT103_H_
 #define _ASNX_JT103_H_
 

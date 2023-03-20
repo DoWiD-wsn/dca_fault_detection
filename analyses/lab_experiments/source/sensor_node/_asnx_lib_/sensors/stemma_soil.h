@@ -1,17 +1,3 @@
-/*!
- * @brief   ASN(x) STEMMA SOIL sensor library -- header file
- *
- * Library to support the STEMMA SOIL sensor.
- *
- * @file    /_asnx_lib_/sensors/stemma_soil.h
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- *
- * @see     https://learn.adafruit.com/adafruit-stemma-soil-sensor-i2c-capacitive-moisture-sensor/
- * @see     https://github.com/adafruit/Adafruit_Seesaw
- */
-
 #ifndef _ASNX_STEMMA_H_
 #define _ASNX_STEMMA_H_
 

@@ -1,17 +1,3 @@
-/*!
- * @brief   ASN(x) one-wire interface (OWI) library -- header file
- *
- * Library to support one-wire interface (OWI) modules.
- * Globally deactivates interrupts during time-critical sections.
- *
- * @file    /_asnx_lib_/owi/owi.h
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- * @see     https://github.com/szszoke/atmega328p/blob/master/onewire/
- * @see     https://hacksterio.s3.amazonaws.com/uploads/attachments/229743/OneWire.zip
- */
-
 #ifndef _ASNX_OWI_H_
 #define _ASNX_OWI_H_
 

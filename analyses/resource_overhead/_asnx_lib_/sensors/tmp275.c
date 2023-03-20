@@ -1,17 +1,3 @@
-/*!
- * @brief   ASN(x) TMP275 temperature sensor library -- source file
- *
- * Library to support the TMP275 temperature sensor.
- *
- * @file    /_asnx_lib_/sensors/tmp275.c
- * @author  Dominik Widhalm
- * @version 1.2.0
- * @date    2021/06/07
- *
- * @todo    *) Add more device functionality (i.e., configuration)
- */
-
-
 /***** INCLUDES *******************************************************/
 #include "tmp275.h"
 

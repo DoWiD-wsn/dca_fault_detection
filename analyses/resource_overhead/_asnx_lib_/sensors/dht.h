@@ -1,15 +1,3 @@
-/*!
- * @brief   ASN(x) DHT temperature/humidity sensor library -- header file
- *
- * Library to support the DHT temperature/humidity sensor.
- * The low level reading is partly based on the code of Davide Gironi.
- *
- * @file    /_asnx_lib_/sensors/dht.h
- * @author  Dominik Widhalm
- * @version 1.3.0
- * @date    2022/02/21
- */
-
 #ifndef _ASNX_DHT_H_
 #define _ASNX_DHT_H_
 
