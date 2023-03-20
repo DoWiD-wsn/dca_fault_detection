@@ -1,0 +1,12 @@
+avr-size -C --mcu=atmega1284p ./build/sn-diag_disabled.elf
+AVR Memory Usage
+----------------
+Device: atmega1284p
+
+Program:    6250 bytes (4.8% Full)
+(.text + .data + .bootloader)
+
+Data:        256 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+

@@ -1,0 +1,140 @@
+################################################################################
+# USAGE:
+# make              .... build the program image
+# make flash        .... build and flash the application
+# make clean        .... remove intermediate and generated files
+# make erase        .... erase program on target device
+# make defaultfuses .... program the default fuse settings as specified below
+# make doc       	.... run doxygen and generate the output in the 'doc' directory
+
+################################################################################
+# define the name of the generated output file
+#
+## Target specifics ##
+TARGET          ?= main
+# Serial port for programmer (e.g., /dev/ttyACM0 (Linux), or COM3 (Windows))
+PORT            ?= /dev/ttyACM0
+MCU              = atmega1284p
+TARGET_ARCH      = -mmcu=$(MCU)
+F_CPU            = 4000000
+
+# Build output directory
+BUILDDIR         = ./build
+
+# Output optimization
+OPTIMIZATION     ?= s
+
+# Tools
+CC        	  	 = avr-gcc
+OBJCP         	 = avr-objcopy
+OBJDMP       	 = avr-objdump
+SIZE        	 = avr-size
+
+# Default fuses
+LFUSE			 = 0xED
+HFUSE			 = 0xD9
+EFUSE			 = 0xFF
+
+
+################################################################################
+# below only edit with care
+#
+# source directors (pwd)
+SRCDIR         	 = .
+SRC          	 = $(wildcard $(SRCDIR)/*.c)
+INCS         	 = -I$(SRCDIR)
+COBJS     		:= $(SRC:.c=.o)
+OBJS      		:= $(addprefix $(BUILDDIR)/,$(COBJS))
+# ASNx library
+ASNX_LIB   		 = ./_asnx_lib_
+ASNX_SRC  		+= $(wildcard $(ASNX_LIB)/*.c)
+ASNX_SRC  		+= $(wildcard $(ASNX_LIB)/**/*.c)
+INCS 			+= -I$(ASNX_LIB)
+# Uncomment to avoid subdirectories in the #include statement
+#INCS 			+= $(addprefix -I, $(dir $(wildcard $(ASNX_LIB)/*/)))
+ASNXCOBJS 		:= $(ASNX_SRC:.c=.o)
+ASNXOBJS  		:= $(addprefix $(BUILDDIR)/,$(subst ./,,$(ASNXCOBJS)))
+# Compiler flags
+CFLAGS       	 = $(TARGET_ARCH)
+CFLAGS       	+= -DF_CPU=$(F_CPU)
+CFLAGS       	+= -O$(OPTIMIZATION)
+CFLAGS       	+= -flto
+LDFLAGS      	 = -lm
+# Compiler warning flags
+CFLAGS      	+= -std=gnu99
+CFLAGS        	+= -pedantic
+CFLAGS        	+= -Wall
+CFLAGS        	+= -Wextra
+CFLAGS        	+= -Wfloat-equal
+CFLAGS        	+= -Wundef
+CFLAGS        	+= -Wshadow
+CFLAGS        	+= -Wpointer-arith
+CFLAGS        	+= -Wcast-align
+CFLAGS        	+= -Wstrict-prototypes
+CFLAGS        	+= -Wmissing-prototypes
+CFLAGS        	+= -Wwrite-strings
+CFLAGS        	+= -Wunreachable-code
+CFLAGS        	+= -Werror
+
+-include $(OBJS:.o=.d)
+
+
+### Programmer ###
+DUDE_ISP     = avrdude -p $(MCU) -c avrispv2 -P $(PORT) -v
+DUDE_FLASH   = -U flash:w:
+DUDE_LFUSE   = -U lfuse:w:
+DUDE_HFUSE   = -U hfuse:w:
+DUDE_EFUSE   = -U efuse:w:
+DUDE_FUSE_T  = :m
+DUDE_ERASE   = -e
+
+
+#### Rules ####
+dbg:
+	@echo "INC files:\n$(INCS)\n"
+	@echo "SRC files:\n$(SRC) $(ASNX_SRC)\n"
+	@echo "OBJ files:\n$(OBJS) $(ASNXOBJS)\n"
+
+all: hex
+
+$(OBJS): $(BUILDDIR)/%.o: %.c | $(BUILDDIR)
+	mkdir -p $(dir $@)
+	$(CC) -c $(CFLAGS) $(INCS) $< -o $@
+
+$(ASNXOBJS): $(BUILDDIR)/%.o: ./%.c | $(BUILDDIR)
+	mkdir -p $(dir $@)
+	$(CC) -c $(CFLAGS) $(INCS) $< -o $@
+
+elf: $(BUILDDIR)/$(TARGET).elf
+$(BUILDDIR)/$(TARGET).elf: $(OBJS) $(ASNXOBJS) | $(BUILDDIR)
+	$(CC) $(LDFLAGS) $(CFLAGS) -o $(BUILDDIR)/$(TARGET).elf $(OBJS) $(ASNXOBJS)
+
+hex: $(BUILDDIR)/$(TARGET).hex
+$(BUILDDIR)/$(TARGET).hex : $(BUILDDIR)/$(TARGET).elf
+	$(OBJCP) $< -O ihex $@
+
+$(BUILDDIR):
+	mkdir -p $(BUILDDIR)
+
+size: $(BUILDDIR)/$(TARGET).elf
+	$(SIZE) -C --mcu=$(MCU) $(BUILDDIR)/$(TARGET).elf
+
+flash: $(BUILDDIR)/$(TARGET).hex
+	$(DUDE_ISP) $(DUDE_FLASH)$(BUILDDIR)/$(TARGET).hex
+
+defaultfuses:
+	$(DUDE_ISP) $(DUDE_LFUSE)$(LFUSE)$(DUDE_FUSE_T) $(DUDE_HFUSE)$(HFUSE)$(DUDE_FUSE_T) $(DUDE_EFUSE)$(EFUSE)$(DUDE_FUSE_T)
+
+erase:
+	$(DUDE_ISP) $(DUDE_ERASE)
+
+clean:
+	rm -rf $(BUILDDIR)
+
+distclean: clean
+	rm -rf doc/
+
+###
+.DEFAULT_GOAL := all
+.PHONY: all elf hex size flash defaultfuses erase clean distclean
+.SUFFIXES:

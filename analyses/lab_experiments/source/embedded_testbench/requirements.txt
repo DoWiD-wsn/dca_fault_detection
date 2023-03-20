@@ -1,0 +1,13 @@
+# smbus/i2c
+smbus
+
+# MySQL
+mysql-connector-python
+
+# Data processing/visualization
+matplotlib
+numpy
+scipy
+
+# Xbee
+digi-xbee
